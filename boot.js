@@ -11,6 +11,7 @@ if (!window.location.hash) {
     );
 
     fitbitAccessToken = fragmentQueryParameters.access_token;
+    fitbitAccessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2V0dDRkMiLCJhdWQiOiIyMjdHNUwiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM4NDYwMDE1LCJpYXQiOjE1MzgzNzM2MTV9.iv5Hmg1_2WZWYxpFy1bWcu2hh2hORbIlCdlSnIKvZfo';
     console.log(fitbitAccessToken);
 }
 
