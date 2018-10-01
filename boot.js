@@ -75,4 +75,5 @@ fetch(
 .then(graphHeartRate)
 .catch(function(error) {
     console.log(error);
+    console.log(error.json());
 });
