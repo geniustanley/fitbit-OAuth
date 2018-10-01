@@ -15,8 +15,8 @@ if (!window.location.hash) {
 }
 
 // Make an API request and graph it
-var processResponse = function(res) {
-  console.log(res.json());
+var processResponse = function(data) {
+  console.log(data);
   /*
     if (!res.ok) {
         throw new Error('Fitbit API request failed: ' + res);
@@ -72,7 +72,7 @@ fetch(
         mode: 'cors',
         method: 'GET'
     }
-).then(processResponse)
+).then(res => res.json()).then(processResponse)
 .then(processHeartRate)
 .then(graphHeartRate)
 .catch(function(error) {
