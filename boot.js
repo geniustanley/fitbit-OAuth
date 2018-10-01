@@ -1,6 +1,6 @@
 // If user hasn't authed with Fitbit, redirect to Fitbit OAuth Implicit Grant Flow
 var fitbitAccessToken;
-
+console.log(fitbitAccessToken);
 if (!window.location.hash) {
     window.location.replace('https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=227H22&redirect_uri=https%3A%2F%2F15359f83.ngrok.io%2F&scope=activity%20nutrition%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight');
 } else {
@@ -9,6 +9,8 @@ if (!window.location.hash) {
         new RegExp("([^?=&]+)(=([^&]*))?", "g"),
         function($0, $1, $2, $3) { fragmentQueryParameters[$1] = $3; }
     );
+    
+    console.log(fitbitAccessToken);
 
     /*fitbitAccessToken = fragmentQueryParameters.access_token;*/
     fitbitAccessToken = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2V0dDRkMiLCJhdWQiOiIyMjdHNUwiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNTM4NDYwMDE1LCJpYXQiOjE1MzgzNzM2MTV9.iv5Hmg1_2WZWYxpFy1bWcu2hh2hORbIlCdlSnIKvZfo';
