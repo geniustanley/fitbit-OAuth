@@ -22,7 +22,6 @@ var processResponse = function(res) {
  
     var contentType = res.headers.get('content-type')
     if (contentType && contentType.indexOf("application/json") !== -1) {
-        console.log(res.json());
         return res.json();
     } else {
         throw new Error('JSON expected but received ' + contentType);
