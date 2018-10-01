@@ -2,7 +2,7 @@
 var fitbitAccessToken;
 
 if (!window.location.hash) {
-    window.location.replace('https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=227H22&redirect_uri=https%3A%2F%2F15359f83.ngrok.io%2F&scope=activity%20nutrition%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight');
+    window.location.replace('https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=22D8J2&redirect_uri=https%3A%2F%2Fgeniustanley.github.io%2Ffitbit-OAuth%2F&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800');
 } else {
     var fragmentQueryParameters = {};
     window.location.hash.slice(1).replace(
