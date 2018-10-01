@@ -1,24 +1,13 @@
 <!doctype html>
-
-<html lang="en">
+<html lang="en-us">
 <head>
-  <meta charset="utf-8">
-
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+<meta charset="utf-8">
+<title>Fitbit Web API demo</title>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>google.charts.load('current', {'packages':['line']});</script>
 </head>
-
 <body>
-  <h1>Fitbit 資料測試 </h1>
-  <script>
-    var url_string = window.location.href;
-    var url = new URL(url_string);
-    var c = url.searchParams.get("access_token");
-    console.log(c);
-  </script>
+    <div id="chart"></div>
+    <script src="./boot.js"></script>
 </body>
 </html>
