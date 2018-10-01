@@ -29,6 +29,7 @@ var processResponse = function(res) {
 }
 
 var processHeartRate = function(timeSeries) {
+    console.log(timeSeries);
     return timeSeries['activities-heart-intraday'].dataset.map(
         function(measurement) {
             return [
